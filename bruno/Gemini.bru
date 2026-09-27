@@ -1,0 +1,21 @@
+meta {
+  name: Gemini
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{geminiBaseUrl}}/evaluate
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "ticket": "Hey, my payment failed twice and my account got locked out. I need this fixed immediately for a client presentation!"
+  }
+}
